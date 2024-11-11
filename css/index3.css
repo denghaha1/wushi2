@@ -1,0 +1,319 @@
+.navbar{
+	color: #337ab7 !important;
+}.a{
+	/* border: 1px solid red; */
+	border-radius: 30px 0;
+	background-color: aqua;
+	width:400px;
+	margin:0 auto;
+	box-shadow:0 0 5px #000;
+	margin-top: 20px;
+	color:#bc082b;
+	text-align: center;
+	height: 50px;
+	line-height: 50px;
+	font-size: 35px;
+	/* display: flex;
+	justify-content: center; */
+}
+.bk{
+	background-color: antiquewhite;
+	border:1px solid red;
+}
+.daxiao{
+	font-size: 1.5rem;
+	margin: 50px 0;
+}
+figure{
+	border: 1px solid red;
+}
+figure p{
+	background-color: skyblue;
+	line-height:1.5;
+	font-size: 15px;
+}
+figcaption{
+	text-align: center;
+	height:20px;
+	line-height:20px;
+	background: pink;
+	margin: 0;
+	padding: 0;
+}
+footer span:first-child{
+	display: block;
+	margin-top: 40px;
+	font-size: 1rem;
+}
+footer span a{
+	display: flex;
+	justify-content: end;
+}
+footer ul li{
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.9rem;
+}
+.bottom p{
+	margin-left: 200px;
+	clear:both;
+	line-height:1.5;
+	font-size: 1.0rem;
+}
+.bottom p:first-child{
+	margin-top: 25px;
+}
+.bottom p:last-child{
+	font-size: 25px;
+	font-family: "宋体";
+	margin-left: 28%;
+	color: #FF2D2D;
+}
+.word{
+	/* margin-left: 200px; */
+	font-size: 13px;
+	margin-top: 55px;
+}
+.search form{
+	float:right;
+	/* border:1px solid red; */
+	height:70px;
+	line-height:70px;
+}
+.search input{
+	border-radius:54px;
+	height:25px;
+	border:1px solid #c0c0c0;
+}
+.search button{
+	width:25px;
+	height:25px;
+	border:1px solid #c0c0c0;
+	outline:none;   /* 外轮廓 */
+}
+.search button:before{
+	content:"\f002";
+	font-family:FontAwesome;
+	color:#337ab7;
+}
+.search input:focus{
+	ontline:none;
+}
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+/* 主要内容区域样式 */
+main {
+    padding-top: 2rem;
+    background: linear-gradient(to bottom, #fff, #f8f9fa);
+}
+
+/* 标题样式 */
+.section-title {
+    text-align: center;
+    color: #d9534f;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    position: relative;
+    padding: 1.5rem;
+    background: linear-gradient(to right, rgba(255,107,107,0.1), rgba(255,230,109,0.1));
+    border-radius: 15px;
+}
+
+.section-title i {
+    margin-right: 1rem;
+    color: #f0ad4e;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: #666;
+    font-size: 1.8rem;
+    margin: 3rem 0;
+}
+
+/* 图片画廊样式 */
+.gallery-item {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.item-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
+}
+
+.gallery-item:hover .item-overlay {
+    transform: translateY(0);
+}
+
+/* 特色卡片样式 */
+.feature-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.card-image {
+    position: relative;
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card-content h3 {
+    color: #d9534f;
+    margin-bottom: 1rem;
+}
+
+.card-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+}
+
+.feature-card:hover .card-image img {
+    transform: scale(1.1);
+}
+
+/* 文化内涵部分样式 */
+.culture-section {
+    padding: 4rem 0;
+    background: linear-gradient(to right, rgba(240,173,78,0.1), rgba(217,83,79,0.1));
+}
+
+.culture-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.highlight-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+}
+
+/* 联系部分样式 */
+.contact-section {
+    padding: 4rem 0;
+    background: linear-gradient(to bottom, #fff, #f8f9fa);
+}
+
+.contact-info {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-info h3 {
+    color: #d9534f;
+    margin-bottom: 1.5rem;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+    
+    .gallery-item img {
+        height: 250px;
+    }
+    
+    .card-image img {
+        height: 180px;
+    }
+    
+    .culture-content {
+        padding: 1.5rem;
+    }
+}
+
+/* Logo 图片样式 */
+.logo-img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+/* 搜索按钮样式 */
+.search button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    color: #337ab7;
+    transition: color 0.3s ease;
+}
+
+.search button:hover {
+    color: #23527c;
+}
+
+.search button i {
+    font-size: 1.2rem;
+}

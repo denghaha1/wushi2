@@ -1,0 +1,265 @@
+/* 全局样式 */
+body {
+    font-family: "Microsoft YaHei", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(to bottom, #fff, #f8f9fa);
+}
+
+/* 导航栏样式 */
+.navbar {
+    color: #337ab7 !important;
+    background: transparent !important;
+    padding: 1rem 0;
+}
+
+/* 主要内容区域样式 */
+main {
+    padding-top: 2rem;
+}
+
+/* 标题样式 */
+.section-title {
+    text-align: center;
+    color: #d9534f;
+    font-size: 2.2rem;
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 1rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(to right, #d9534f, #f0ad4e);
+}
+
+/* 特色介绍部分样式 */
+.feature-intro {
+    padding: 4rem 0;
+}
+
+.intro-image {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.intro-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.intro-image:hover img {
+    transform: scale(1.05);
+}
+
+.intro-image:hover .image-overlay {
+    transform: translateY(0);
+}
+
+.intro-content {
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* 特色要素卡片样式 */
+.element-card {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+    margin-bottom: 2rem;
+    transition: transform 0.3s ease;
+}
+
+.element-card:hover {
+    transform: translateY(-10px);
+}
+
+.element-icon {
+    font-size: 3rem;
+    color: #d9534f;
+    margin-bottom: 1.5rem;
+}
+
+/* 表演特点网格样式 */
+.feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 3rem 0;
+}
+
+.feature-item {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.feature-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.feature-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    color: white;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item:hover img {
+    transform: scale(1.1);
+}
+
+.feature-item:hover .feature-content {
+    transform: translateY(0);
+}
+
+/* 文化价值部分样式 */
+.cultural-value {
+    padding: 4rem 0;
+    background: linear-gradient(to right, rgba(240,173,78,0.1), rgba(217,83,79,0.1));
+    border-radius: 20px;
+}
+
+.value-content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    background: white;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.highlight-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #444;
+    padding: 2rem;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .intro-image img {
+        height: 300px;
+    }
+    
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .element-card {
+        padding: 1.5rem;
+    }
+}
+
+/* 动画效果 */
+.animate-on-scroll {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Logo 图片样式 */
+.logo-img {
+    width: 60px;  /* 统一宽度 */
+    height: 60px; /* 统一高度 */
+    border-radius: 50%; /* 圆形效果 */
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+    transform: scale(1.1);
+}
+
+/* 搜索按钮样式 */
+.search button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: transparent;
+    color: #337ab7;
+    transition: color 0.3s ease;
+}
+
+.search button:hover {
+    color: #23527c;
+}
+
+.search button i {
+    font-size: 1.2rem;
+}
+
+/* 特色内容样式 */
+.wenziyouxia {
+    background: linear-gradient(to right, rgba(240,173,78,0.1), rgba(217,83,79,0.1));
+    color: #444;
+    padding: 2.5rem;
+    border-radius: 20px;
+    line-height: 1.8;
+    font-size: 1.15rem;
+    margin: 2rem auto;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    max-width: 1000px;
+    border-left: 5px solid #f0ad4e;
+}
+
+/* 视频容器样式 */
+.embed-responsive {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    margin: 3rem 0;
+}
